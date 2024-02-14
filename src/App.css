@@ -1,0 +1,260 @@
+*{
+  padding: 0%;
+  margin: 0%;
+  box-sizing: border-box;
+}
+
+body{
+  font-family: "Roboto", Arial, sans-serif;
+  font-size: 14px;
+  line-height: 1.42857143;
+  color: #212121;
+  background-color: #f7f7f7;
+  overflow-x: hidden;
+  width: 100%;
+}
+
+
+
+.nav-item > a{
+
+  position: relative;
+  text-decoration: none;
+  color: inherit; 
+  padding-bottom: 10px;
+}
+
+.nav-item a::before{
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  width: 0;
+  height: 2px; /* Adjust the height of the underline as needed */
+  background-color: white; /* Color of the underline */
+  transform: translateX(-50%);
+  transition: width 0.3s ease-in-out; /* Adjust the transition duration as needed */
+}
+
+.nav-item a:hover::before{
+  width: 100%;
+}
+
+
+.bg-primary{
+  background-color: #f7f7f7
+}
+
+.bg-secondary{
+  background-color:#303f9f !important;
+}
+
+.bg-secondary-800{
+  background-color:#222f86 !important;
+}
+
+.color-primary{
+  color:#303f9f;
+}
+
+.hero-section{
+  height: 240px;
+  background-image: url("./assets/ecommerce.jpg");
+  background-color: #212121;
+  position: relative;
+  color: inherit;
+  z-index: 1;
+}
+
+.hero-section::after{
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.5);
+  z-index: -1;
+}
+.hero-section div{
+  background:transparent;
+  color: blue;
+  opacity: 1;
+  
+}
+
+.heading-underline{
+    border-bottom: 3px solid #3f51b5;
+    width: 70px;
+    height: 3px;
+}
+
+.gc-border{
+  width: 100%;
+  border-top: 2px dotted #fff;
+    bottom: 0;
+    display: block;
+    opacity: 0.5;
+}
+.bg-red{
+  background-color: #fe4987;
+}
+.csecondary{
+  color: #fe4987;
+}
+.brd-tm{
+  border-top: 2px solid #cecdcd;
+}
+
+.gift-card{
+  background-image: url("https://res-1.cloudinary.com/linkisin/image/asset/f_auto,fl_lossy,q_auto/gc-ptrn-3cd5200da00cf6734122490c5b4170bd.png");
+  background-blend-mode: overlay;
+}
+
+.search-brand{
+  width: 100%;
+  color: white;
+  font-weight: 500;
+  padding: 15px;
+  
+  background: url("https://res-1.cloudinary.com/linkisin/image/asset/f_auto,fl_lossy,q_auto/gift-card-banner-3b09a2b3762c48db93d8edf4e7b907b4.png") 100% 0 no-repeat;
+}
+
+#free-solo-2-demo{
+  color: black;
+}
+
+
+@keyframes changeNumber {
+  0% {
+    content: "0000";
+  }
+  25% {
+    content: "1234";
+  }
+  50% {
+    content: "5678";
+  }
+  75% {
+    content: "9876";
+  }
+  100% {
+    content: "Actual Numbers";
+  }
+}
+
+
+.animate-changeNumber {
+  animation-name: changeNumber;
+  animation-duration: 5s; /* Adjust the duration as needed */
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: 1;
+}
+
+
+/* LOGIN SIGNUP MODAL CSS */
+.modal {
+  /* display: none; Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 50; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+
+.login-signup{
+  color: #000;
+  background-color: white;
+  text-transform: uppercase;
+  font-weight: 500;
+
+}
+
+.login-signup-active{
+  background-color: #303f9f;
+  color: white;
+  text-transform: uppercase;
+  font-weight: 500;
+
+
+}
+
+
+.modal-content {
+  position: relative;
+  background-color: #e5e7eb;;
+  margin: auto;
+  border: 1px solid #888;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+  -webkit-animation-name: animatetop;
+  -webkit-animation-duration: 0.4s;
+  animation-name: animatetop;
+  animation-duration: 0.4s
+}
+
+/* Add Animation */
+@-webkit-keyframes animatetop {
+  from {top:-300px; opacity:0} 
+  to {top:0; opacity:1}
+}
+
+@keyframes animatetop {
+  from {top:-300px; opacity:0}
+  to {top:0; opacity:1}
+}
+
+/* The Close Button */
+.close {
+  color: white;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.modal-header {
+  padding: 2px 16px;
+  background-color: #5cb85c;
+  color: white;
+}
+
+.modal-body {padding: 2px 16px;}
+
+.modal-footer {
+  padding: 2px 16px;
+  background-color: #5cb85c;
+  color: white;
+}
+
+
+/* for chat section*/
+
+.message-content-section{
+  height: calc(100%-25%);
+  overflow-y: auto !important;
+}
+
+.message-content{
+  min-height: 5px !important;
+
+}
+
+.message-box-right{
+  justify-content: flex-end !important;
+  justify-items: flex-end !important;
+}
+
