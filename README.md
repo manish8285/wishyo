@@ -47,7 +47,7 @@ Wishyo is a comprehensive platform designed for buying and selling gift cards an
 1. **Install the Depedencies:**
   ```bash
    npm i 
-
+  ```
 
 
 ## Usage
