@@ -33,9 +33,10 @@ Wishyo is a comprehensive platform designed for buying and selling gift cards an
   - Firebase
 
 - **Tools and Services:**
-  - AWS (for deployment and hosting)
+  - Vercel
+  - Github
 
-## Installation
+## Installation  
 
 1. **Clone the repository:**
 
@@ -44,8 +45,8 @@ Wishyo is a comprehensive platform designed for buying and selling gift cards an
    cd wishyo 
 
 1. **Install the Depedencies:**
- ```bash
- napm i 
+  ```bash
+   npm i
 
 
 ## Usage
