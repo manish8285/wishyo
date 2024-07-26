@@ -68,9 +68,10 @@ Easily complete transactions with a user-friendly interface.
 ![5](./images/wish5.png)
 
 ## Contact
+
 For any inquiries or questions, please contact: 
 
-Name: Manish Kumar Singh 
-Email: ermaanish@gmail.com 
-GitHub: manish8285 
-LinkedIn: manish200 
+Name: Manish Kumar Singh   
+Email: ermaanish@gmail.com   
+GitHub: manish8285   
+LinkedIn: manish200   
